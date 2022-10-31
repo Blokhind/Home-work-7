@@ -1,0 +1,171 @@
+.footer {
+  background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer__container {
+  display: flex;
+  align-items: center;
+  align-items: baseline;
+}
+.footer__nav {
+  display: block;
+  margin-right: 70px;
+}
+.footer-soc {
+  display: block;
+}
+
+.logo__accent--light {
+  color: #ffffff;
+}
+.footer__address {
+  display: flex;
+  gap: 9px;
+  flex-direction: column;
+  font-style: normal;
+}
+.footer__map {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  text-decoration: none;
+  margin-top: 20px;
+}
+.footer__list {
+  display: flex;
+  gap: 9px;
+  flex-direction: column;
+  list-style: none;
+}
+.footer__link {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: #2196f3;
+  }
+}
+
+.footer__soc {
+  margin-right: 93px;
+}
+
+.footer__soc-title {
+  display: block;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.soc__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  gap: 10px;
+}
+
+.soc__link {
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: #2196f3;
+    color: #ffffff;
+  }
+}
+
+.soc__icon {
+  fill: currentColor;
+}
+
+.input__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--letter-color);
+  margin-bottom: 20px;
+}
+
+.input__container {
+  display: flex;
+  align-items: center;
+}
+
+.input__container input {
+  background-color: inherit;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  width: 358px;
+  padding: 15px 16px;
+  margin-right: 12px;
+  color: #f5f4fa;
+}
+
+.input__container input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+}
+
+.input__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+  color: var(--letter-color);
+  background-color: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: transparent;
+  width: 200px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  
+  &:hover {
+    background-color: #3270a3;
+  }
+}
+
+.input__img {
+  fill: currentColor;
+}
+
+@keyframes moving {
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+.input__button:hover > .input__img {
+  animation: moving 1000ms 1 linear;
+  transform-origin: 1px 1px;
+}
